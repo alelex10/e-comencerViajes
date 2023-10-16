@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">
+                    <img src="./img/logo-blanco.png" alt="Logo de la empresa">
+                </a>
+            </li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Nuestros Destinos</a></li>
+            <li><a href="ofertas.html">Ofertas del Mes</a></li>
+            <li><a href="contacto.html">Contáctenos</a></li>
+        </ul>
+    </nav>
+    <h1>Contacto</h1>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
