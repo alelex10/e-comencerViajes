@@ -1,6 +1,46 @@
 * {
   margin: 0%;
 }
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 25px;
+  background-color: #59378d; /* Color de fondo de la barra de navegación */
+  overflow: hidden;
+}
+
+nav.navbar img {
+  display: flex;
+  justify-content: center;
+  width: 200px; /* Establece el ancho deseado */
+  height: auto; /* Ajusta automáticamente la altura */
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 25px;
+  margin-right: 20px; /* Espacio entre los elementos de la barra de navegación */
+}
+
+.nav-list li a {
+  color: #fff; /* Color del texto de los enlaces */
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+  font-size: 18px; /* Tamaño de fuente de los enlaces */
+}
+
+.nav-list li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces */
+}
 nav {
   text-align: center;
   background-color: rgb(224, 217, 217);
