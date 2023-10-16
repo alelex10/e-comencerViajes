@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros destinos</title>
     <link rel="stylesheet" href="./css/nuestrosDestino.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <nav class="navbar">
@@ -22,46 +23,107 @@
     </nav>
     <section>
         <h1>Conozca nuestros destinos</h1>
-        <div class="grid-container">
-            <div class="lugaresViaje">
-              <div class="imgLugaresViaje">
-                <img class="lugares" src="https://picsum.photos/300/300" alt="">
-              </div>
-              <div class="infoViaje">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit Lorem, ipsum..</p>
+        <div class="grid">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="./img/01.jpg" alt="Oferta 1">
+                <div class="card-details">
+                    <h2>Cerro de los Siete Colores (Jujuy)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>En el noroeste argentino, en lo más profundo de la impresionante Quebrada de Humahuaca, encontramos la pequeña villa de Purmamarca, que preserva intacta su cultura indígena. Justo detrás del pueblo, se alza como telón de fondo este cerro imposible, con múltiples colores producto de los estratos y sedimentos de este lugar como sacado de otro planeta.</p>
+                    <button class="view-details">Agregar al carrito</button>
                 </div>
-                <div class="precio">
-                  <p>Lorem, ipsum dolor.</p>
-                </div>  
             </div>
-            <div class="lugaresViaje">
-              <div class="imgLugaresViaje">
-                <img class="lugares" src="https://picsum.photos/300/300" alt="">
-              </div>
-              <div class="infoViaje">
-                <p>Lorem ipsum dolor sit Lorem, ipsum..</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="precio">
-                Lorem, ipsum dolor.
-              </div>
+    
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <img src="./img/02.jpg" alt="Oferta 2">
+                <div class="card-details">
+                    <h2>Cataratas de Iguazú (Misiones)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>¿Qué podemos añadir sobre una de las cataratas más célebres del mundo? En la frontera entre Argentina y Brasil, el caudaloso río Iguazú se encuentra con un desnivel abrupto de hasta 80 metros de altura, formando nada más ni nada menos que 275 saltos de agua (el 80% en lado argentino). Además, unas pasarelas permiten acercarse hasta muy cerca de la catarata, siendo la llamada Garganta del Diablo la más espectacular de todas.</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
             </div>
-            <div class="lugaresViaje">3</div>
-            <div class="lugaresViaje">4</div>
-            <div class="lugaresViaje">5</div>
-            <div class="lugaresViaje">6</div>
-            <div class="lugaresViaje">7</div>
-            <div class="lugaresViaje">8</div>
-            <div class="lugaresViaje">9</div>
-            <div class="lugaresViaje">10</div>
-            <div class="lugaresViaje">11</div>
-            <div class="lugaresViaje">12</div>
-          </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <img src="./img/03.jpg" alt="Oferta 2">
+                <div class="card-details">
+                    <h2>Parque Nacional Talampaya (La Rioja)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>Esta reserva existe desde 1975 y fue creada para preservar sus valores paisajísticos y paleontológicos (se encontró un dinosaurio de 250 millones de años de antigüedad en su interior). De hecho, la Unesco declaró esta zona como Patrimonio de la Humanidad. Sus cañones y curiosas formaciones de arenisca, como el Tablero de Ajedrez, Los Reyes Magos, o La Catedral, son un capricho de la erosión que te dejarán boquiabierto.</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
+            </div>         
+
+            <!-- Tarjeta 4 -->
+            <div class="card">
+                <img src="./img/04.jpg" alt="Oferta 1">
+                <div class="card-details">
+                    <h2>Estancias Jesuíticas (Córdoba)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>No es exagerado afirmar que estas estancias son, por derecho propio, unas de las más bellas obras de arquitectura colonial de toda Argentina. Estas construcciones tenían un doble fin: religioso y agropecuario. Fueron construidas a partir del 1616 por los jesuitas, y se mantuvieron en activo hasta que esta orden fue expulsada por la Corona Española a fines del siglo XVIII. Estas construcciones, que reverencian un modo de vida e idiosincrasia, fueron reconocidas por la Unesco (5 de ellas tienen una protección especial).</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 5 -->
+            <div class="card">
+                <img src="./img/05.jpg" alt="Oferta 2">
+                <div class="card-details">
+                    <h2>Buenos Aires (Buenos Aires)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>Indiscutiblemente, una de las capitales más bellas de toda América, repleta de rincones célebres como el colorido barrio de La Boca, el animado San Telmo, la gastronomía de Puerto Madero o la tan fotografiada Casa Rosada. Buenos Aires es una ciudad que rebosa cultura y vitalidad en sus calles. Busques lo busques, en Buenos Aires lo encontrarás.</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="card">
+                <img src="./img/06.jpg" alt="Oferta 2">
+                <div class="card-details">
+                    <h2>Península Valdés (Chubut)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>Si amas la naturaleza y la fauna marina, te enamorarás de Península Valdés, uno de los principales lugares de avistamiento de ballenas, delfines, toninas, pingüinos y elefantes marinos, que existen en todo el planeta. Su valor ecológico es tal que desde 1999 también está catalogado como Patrimonio de la Humanidad por la Unesco. Esta península es un auténtico santuario de vida que merece ser visitado y preservado.</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
+            </div>     
+
+            <!-- Tarjeta 7 -->
+            <div class="card">
+                <img src="./img/07.jpg" alt="Oferta 1">
+                <div class="card-details">
+                    <h2>Bariloche y la Ruta de los Siete Lagos (Río Negro)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>Bariloche se ha convertido, por todos los atractivos y actividades que ofrece (fue nombrada “capital nacional del turismo aventura”), en la ciudad más visitada de la Patagonia, y un destino imperdible para nacionales y extranjeros. Abrazado por el Parque Nacional Nahuel Huapi, de frondosos bosques, montañas y lagos, el poder de la naturaleza es omnipresente. Una buena opción para hacerse a la idea de la magia de esta región es hacer la Ruta de los Siete Lagos, de unos 100 kms entre Villa La Angostura y San Martín de los Andes.</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 8 -->
+            <div class="card">
+                <img src="./img/08.jpg" alt="Oferta 2">
+                <div class="card-details">
+                    <h2>Glaciar Perito Moreno (Santa Cruz)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>No hay palabras para transmitir la inmensidad y poderío de este magnífico glaciar del Campo de Hielo Patagónico Sur. Con una altura que alcanza los 60 metros (como un edificio de 15 pisos), una longitud frontal de 5 kms y una profundidad de 30 kms, estar ante este coloso es algo que se recuerda toda la vida. Su poder es tal que es uno de los pocos glaciares que aún mantienen su avance.</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 9 -->
+            <div class="card">
+                <img src="./img/09.jpg" alt="Oferta 2">
+                <div class="card-details">
+                    <h2>Faro de Ushuaia (Tierra de Fuego)</h2>
+                    <p>Precio: $XXX</p>
+                    <p>Aunque Ushuaia es la única ciudad argentina que se encuentra al oeste de los Andes, su fama procede por ostentar el título de ser “La Ciudad del Fin del Mundo” o “La Ciudad más Austral del Planeta” (aunque los vecinos chilenos reivindican Puerto Williams por estar aún más al sur). Ushuaia, además de la estampa clásica del faro, ofrece la posibilidad de divisar mucha fauna marina, aves y grandes pingüineras, como la de Isla Martillo. Navegar por el Canal Beagle realmente transmite la sensación de estar en un lugar indómito y remoto.</p>
+                    <button class="view-details">Agregar al carrito</button>
+                </div>
+            </div>             
+
+        </div>
     </section>
     <footer>
         <p>&copy; 2023 Mi Sitio Web</p>
