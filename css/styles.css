@@ -60,6 +60,15 @@ body {
   background-color: #59378d; /* Color de fondo de la barra de navegación */
   overflow: hidden;
 }
+/* para ocultar el menu desplegable */
+#nav-menu {
+  display: none; 
+  order: 1; /* mueve el menu al final de la l */
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none;
+}
 
 nav.navbar img {
   display: flex;
@@ -180,22 +189,51 @@ p {
   padding: 20px;
   margin: 20px;
 }
-.oculto{
-    display: none;
-}
 /* para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-/* oculta los enlaces para pantallas mas pequeñas */
-  nav ul div li a{
+  .navbar {
+    padding: 0%;
+    position: relative;/* para al momento de mover el menu "hamborguesa",tenga como referencia la caja .navbar  */
+  }
+  .nav-list {
+    justify-content: space-between;
+    /* para que la listas de enlaces baje y ocupe el 100% del ancho  */
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3px;
+  }
+
+  #nav-menu {
+    display: block;
+    order: 1; /* coloca al menu "hamburgussa" a la izuierda del */
+    margin-right: 10%;
+  }
+  /* muestra los esnlaces al hacer click en el menu */
+  #menu-toggle:checked ~ ul .nav-list-enlaces {
+    margin: 0%;
+    border-top: solid;
+    border-color: white;
+    display: block;
+    width: 100%;
+  }
+  /* para reposicionar el logo del menu por que se deposiciona */
+  #menu-toggle:checked + #nav-menu {
+    position: absolute;/* para moverlo a boluntad ignorando otras cajas */
+    margin: 0%;
+    left: 80%;
+    bottom: 342px;
+  }
+  /* oculta los enlaces del nav */
+  nav ul .nav-list-enlaces {
     display: none;
-}
+  }
 }
 /* para pantallas muy pequeñas */
 @media (max-width: 480px) {
-  .grid{
+  .grid {
     grid-template-columns: 1fr;
   }
 }
