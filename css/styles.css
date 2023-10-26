@@ -23,6 +23,13 @@ label {
   margin-bottom: 5px;
 }
 
+.text-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
 input[type="text"],
 input[type="tel"],
 input[type="email"],
