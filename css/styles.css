@@ -171,7 +171,18 @@ p {
   margin: 20px auto;
   max-width: 900px;
 }
-
+.bordeBlancoTexto{
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 1.25rem;
+}
+.bordeBlancoImg{
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 0.313rem;
+}
 .destinations a {
   width: 30%; /* Ajusta el ancho de cada imagen */
   display: block;
@@ -238,10 +249,12 @@ p {
 /* ESTILO PARA LAS PAGINAS DE CADA DESTINO */
 
 .imgDestino {
-  grid-area: imagen;
+  grid-area: imagen; /* designo como se llamara cada area */
+  justify-self: center;
 }
 .detallesDestino {
   grid-area: detalles;
+  height: fit-content;/* para que la caja se ajuste al contenido */
 }
 iframe {
   grid-area: iframe;
@@ -252,10 +265,11 @@ iframe {
   display: grid;
   gap: 3rem;
   row-gap: 1.25rem;
-
+/* distribullo a ubicacionde del contenido con su respectivo nombre */
   grid-template:
-    "imagen detalles" auto
-    "iframe iframe";
+    "imagen detalles" auto/* contenido y altura en la 1ra fila de grid */
+    "iframe iframe"/* contenido y altura en la 1ra fila de grid */
+    ;
 }
 /* para pantallas pequeñas */
 @media (max-width: 820px) {
@@ -299,12 +313,15 @@ iframe {
     display: none;
   }
   /* ESTILO PARA LAS PAGINAS DE CADA DESTINO */
+  iframe{
+    height: 21.875rem;
+  }
   .sectionDestino {
   
     grid-template:
       "imagen "
       "detalles" 
-      "iframe "
+      "iframe " 
       ;
   }
 }
