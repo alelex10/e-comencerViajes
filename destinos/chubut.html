@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViajAr|Chubut</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- la barra de menu para pantallas pequeñas -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="nav-menu"
+        ><div>
+          <!-- icono importado de una pagina -->
+          <i class="fa-solid fa-bars fa-3x" style="color: #ffffff"></i>
+        </div>
+      </label>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">
+            <img src="../img/logo-blanco.png" alt="Logo de la empresa" />
+          </a>
+        </li>
+        <li class="oculto nav-list-enlaces">
+          <a class="oculto" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-list-enlaces oculto">
+          <a class="oculto" href="../destinos.html">Nuestros Destinos</a>
+        </li>
+        <li class="nav-list-enlaces">
+          <a class="oculto" href="../ofertas.html">Ofertas del Mes</a>
+        </li>
+        <li class="nav-list-enlaces">
+          <a class="oculto" href="../contacto.html">Contáctenos</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="sectionDestino">
+        <img
+          class="imgDestino bordeBlancoImg"
+          src="../img/06.jpg"
+          alt="Oferta 6"
+        />
+        <div class="detallesDestino bordeBlancoTexto">
+          <h2>Península Valdés (Chubut)</h2>
+          <p>Precio: $XXX</p>
+          <p>
+            Si amas la naturaleza y la fauna marina, te enamorarás de Península
+            Valdés, uno de los principales lugares de avistamiento de ballenas,
+            delfines, toninas, pingüinos y elefantes marinos, que existen en
+            todo el planeta. Su valor ecológico es tal que desde 1999 también
+            está catalogado como Patrimonio de la Humanidad por la Unesco. Esta
+            península es un auténtico santuario de vida que merece ser visitado
+            y preservado.
+          </p>
+          <button class="view-details">Agregar al carrito</button>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035224.250164857!2d-65.64420997950049!3d-42.01988356312732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe02d682cb3936b1%3A0xc9ba8f034ab2e628!2zUGVuw61uc3VsYSBWYWxkw6lz!5e0!3m2!1ses-419!2sar!4v1698390725020!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="bordeBlancoImg"
+        ></iframe>
+        
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <section class="data">
+        <div>
+          <span>+54 9 5678 4567 - contacto@viajar.ar</span>
+        </div>
+        <div>
+          <h6>Copyright © 2023 / ViajAr / Todos los derechos reservados</h6>
+        </div>
+      </section>
+
+      <section class="socialnet">
+        <a href="https://www.whatsapp.com/" class="bi bi-whatsapp"></a>
+
+        <a href="https://www.facebook.com/" class="bi bi-facebook"></a>
+
+        <a href="https://twitter.com/" class="bi bi-twitter"></a>
+
+        <a href="https://www.instagram.com/" class="bi bi-instagram"></a>
+      </section>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
