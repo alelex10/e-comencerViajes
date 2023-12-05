@@ -9,8 +9,57 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 <body>
+    <nav class="navbar">
+      <!-- la barra de menu para pantallas pequeñas -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="nav-menu"
+        ><div>
+          <!-- icono importado de una pagina -->
+          <i class="fa-solid fa-bars fa-3x" style="color: #ffffff"></i>
+        </div>
+      </label>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">
+            <img src="./img/logo-blanco.png" alt="Logo de la empresa" />
+          </a>
+        </li>
+        <li class="oculto nav-list-enlaces">
+          <a class="oculto" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-list-enlaces oculto">
+          <a class="oculto" href="destinos.html">Nuestros Destinos</a>
+        </li>
+        <li class="nav-list-enlaces">
+          <a class="oculto" href="ofertas.html">Ofertas del Mes</a>
+        </li>
+        <li class="nav-list-enlaces">
+          <a class="oculto" href="contacto.html">Contáctenos</a>
+        </li>
+      </ul>
+    </nav>
     <div class="text-center">
         <h1>¡Muchas gracias!</h1>
     </div>
+        <footer class="footer-container">
+      <section class="data">
+        <div>
+          <span>+54 9 5678 4567 - contacto@viajar.ar</span>
+        </div>
+        <div>
+          <h6>Copyright © 2023 / ViajAr / Todos los derechos reservados</h6>
+        </div>
+      </section>
+
+      <section class="socialnet">
+        <a href="https://www.whatsapp.com/" class="bi bi-whatsapp"></a>
+
+        <a href="https://www.facebook.com/" class="bi bi-facebook"></a>
+
+        <a href="https://twitter.com/" class="bi bi-twitter"></a>
+
+        <a href="https://www.instagram.com/" class="bi bi-instagram"></a>
+      </section>
+    </footer>
 </body>
 </html>
